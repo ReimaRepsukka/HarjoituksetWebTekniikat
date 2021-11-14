@@ -1,4 +1,4 @@
-document.querySelector("button").addEventListener("click", buttonClicked)
+    document.querySelector("button").addEventListener("click", buttonClicked2)
 
 
 function buttonClicked(){
