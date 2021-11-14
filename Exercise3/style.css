@@ -1,0 +1,14 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+}
+
+.colored{
+    background-color: brown;
+}
+
+.important{
+    font-weight: bold;
+    color: red;
+}
