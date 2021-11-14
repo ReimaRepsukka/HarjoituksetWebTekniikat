@@ -24,3 +24,39 @@ for (let i = 1; i < 6; i++) {
    li.textContent = "Number " + i 
    ul.appendChild(li)
 }
+
+//e
+let table = document.createElement("table")
+let tr = [document.createElement("tr"), document.createElement("tr")]
+let th = [document.createElement("th"), document.createElement("th")]
+let td = [document.createElement("td"), document.createElement("td")]
+th[0].textContent = "Last name"
+th[1].textContent = "First name"
+td[0].textContent = "John"
+td[1].textContent = "Doe"
+
+tr[0].append(th[0],th[1])
+tr[1].append(td[0],td[1])
+
+table.append(tr[0], tr[1])
+
+content.appendChild(table)
+
+//f  
+//Using query selector to avoid live collection
+let elems = document.querySelectorAll("#content>*")
+
+for (const e of elems) {
+   let hr = document.createElement("hr")
+   content.insertBefore(hr, e);
+}
+
+//g
+elems = document.querySelectorAll("div>p")
+
+for (const e of elems) {
+   console.log(e);
+   let span = document.createElement("span")
+   span.textContent = "***"
+   e.parentElement.insertBefore(span, e);
+}
